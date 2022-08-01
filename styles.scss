@@ -1,5 +1,4 @@
 * {
-  display: block;
   padding: 0;
   margin: 0;
 }
@@ -56,6 +55,7 @@ body {
   .product-cart__photo > img {
     width: 100%;
     min-width: 200px;
+    min-height: 100%;
   }
 
   .product-cart__content {
@@ -161,5 +161,18 @@ body {
 }
 /* attribution */
 .attribution {
-  display: inline-block;
+  position: fixed;
+  bottom: 0;
+  align-self: center;
+  a {
+    color: var(--dark-cyan);
+    text-decoration: none;
+
+    &:hover {
+      color: var(--very-dark-blue);
+    }
+    &:visited {
+      color: var(--dark-grayish-blue);
+    }
+  }
 }
